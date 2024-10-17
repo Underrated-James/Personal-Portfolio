@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: 'Arial', sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent navbar */
+  backdrop-filter: blur(10px); /* Blur effect for a modern touch */
+}
+
+.nav-link {
+  color: #fff !important; /* White links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #00ffcc !important; /* Neon green on hover */
+}
+
+/* Container Styles */
+.container {
+  padding: 2rem;
+}
+
+/* Home Section */
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  animation: fadeIn 2s ease-in-out; /* Fade in animation */
+}
+
+/* About, Skills, and Contact Sections */
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Form Styles */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent input fields */
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #ccc; /* Placeholder color */
+}
+
+.btn-primary {
+  background-color: #00ffcc; /* Neon button */
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #00cc99; /* Darker neon on hover */
+}
+
+/* Submission Success Message */
+.success-message {
+  animation: slideIn 1s ease; /* Slide in animation */
+  text-align: center;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5rem; /* Smaller heading on mobile */
+  }
+
+  .container {
+      padding: 1rem;
+  }
+}

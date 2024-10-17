@@ -1,0 +1,165 @@
+/* Global Styles */
+* {
+  box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+}
+
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: 'Arial', sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Link Styles */
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+}
+
+a:hover {
+  color: #00ffcc; /* Neon green hover effect */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background for navbar */
+  backdrop-filter: blur(15px); /* Stronger blur for a more modern look */
+  padding: 1rem 2rem; /* Padding around the navbar */
+}
+
+.nav-link {
+  color: #fff !important; /* White links */
+  transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.nav-link:hover {
+  color: #00ffcc !important; /* Neon green on hover */
+  transform: scale(1.1); /* Slight scale up on hover */
+}
+
+/* Container Styles */
+.container {
+  padding: 4rem 2rem; /* Increased padding for spacious layout */
+}
+
+/* Section Headings */
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  font-weight: bold;
+  letter-spacing: 0.1em; /* Adds spacing between letters */
+}
+
+h1 {
+  font-size: 4rem; /* Large heading */
+  animation: fadeIn 2s ease-in-out; /* Fade in animation */
+}
+
+h2 {
+  font-size: 2.5rem; /* Smaller subheading */
+  color: #00ffcc; /* Neon green color for subheadings */
+}
+
+/* Paragraph Styles */
+p {
+  text-align: justify;
+  line-height: 1.8; /* Increased line height for readability */
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem; /* Spacing between paragraphs */
+}
+
+/* List Styles */
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+li {
+  position: relative; /* Position relative for custom bullet */
+  padding-left: 1.5rem; /* Space for custom bullet */
+}
+
+li::before {
+  content: '▶'; /* Custom bullet */
+  position: absolute;
+  left: 0;
+  color: #00ffcc; /* Neon green for custom bullet */
+  font-weight: bold; /* Bold bullet */
+}
+
+/* Form Styles */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent input fields */
+  border: 1px solid #fff;
+  color: #fff;
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.form-control:focus {
+  border-color: #00ffcc; /* Neon green border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.form-control::placeholder {
+  color: #ccc; /* Placeholder color */
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #00ffcc; /* Neon button */
+  border: none;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  padding: 0.5rem 1rem; /* Button padding */
+}
+
+.btn-primary:hover {
+  background-color: #00cc99; /* Darker neon on hover */
+  transform: scale(1.05); /* Slight scale up on hover */
+}
+
+/* Submission Success Message */
+.success-message {
+  animation: slideIn 1s ease; /* Slide in animation */
+  text-align: center;
+  font-size: 1.5rem; /* Larger font for success message */
+  margin-top: 2rem; /* Top margin for spacing */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 3rem; /* Smaller heading on mobile */
+  }
+
+  h2 {
+      font-size: 2rem; /* Smaller subheading on mobile */
+  }
+
+  .container {
+      padding: 2rem 1rem; /* Smaller padding on mobile */
+  }
+}
